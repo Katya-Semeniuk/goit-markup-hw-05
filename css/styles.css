@@ -90,6 +90,9 @@ ul {
   font-weight: 500;
   line-height: 1.1;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -120,6 +123,7 @@ ul {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* icon */
 .data-link {
@@ -206,6 +210,7 @@ ul {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover .button:focus {
   background-color: #188ce8;
@@ -235,6 +240,15 @@ ul {
   background-color: #ffffff;
 }
 
+/* icon modal window */
+.icon-modal {
+  padding-top: 8px;
+  padding-right: 8px;
+  background-color: #ffffff;
+  color: currentColor;
+  border-radius: 50%;
+  border: #000000;
+}
 /*-------------- Features---------- */
 
 .features-list {
@@ -377,6 +391,8 @@ ul {
   border-radius: 50%;
   color: #afb1b8;
   background-color: var(--main-white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-soc-worker:hover,
 .link-soc-worker:focus {
@@ -404,6 +420,8 @@ ul {
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 3px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-clients:hover,
 .link-clients:focus {
@@ -438,11 +456,13 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-adress .color {
   color: var(--main-white-color);
   line-height: 1.7;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus {
@@ -484,7 +504,9 @@ ul {
   height: 44px;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-link:hover,
 .social-link:hover {
   background-color: var(--color-accent);
 }
@@ -544,6 +566,7 @@ ul {
 }
 .products-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products-link:hover,
 .products-link:focus {
@@ -568,6 +591,9 @@ ul {
   text-align: center;
   border: none;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
