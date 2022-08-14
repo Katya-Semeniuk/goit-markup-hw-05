@@ -142,7 +142,7 @@ ul {
 .currently::after {
   content: "";
   position: absolute;
-  bottom: calc(0px-2px);
+  bottom: -23px;
   right: 0;
 
   width: 100%;
